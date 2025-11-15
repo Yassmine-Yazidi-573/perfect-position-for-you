@@ -16,8 +16,6 @@ This project demonstrates a simple end-to-end ML pipeline:
 * Evaluate accuracy
 * Predict recommended jobs for new users' CVs
 
-The project reaches **100% accuracy** on the test set.
-
 ---
 
 ## **📂 Dataset**
@@ -64,20 +62,6 @@ def generate_job_label(row):
 pip install pandas numpy scikit-learn
 ```
 
-### **Notebook Rendering Issue**
-
-If the notebook shows this message:
-
-> *“Please rerun this cell to show the HTML representation or trust the notebook.
-> On GitHub, the HTML representation is unable to render…”*
-
-It simply means GitHub cannot render interactive HTML output.
-You can view the full notebook using **nbviewer:**
-
-🔗 [https://nbviewer.org](https://nbviewer.org)
-
----
-
 ## **🧠 Model Building**
 
 ### **Train/Test Split**
@@ -107,30 +91,6 @@ y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy}")
 ```
-
-**Result:**
-
-```
-Accuracy: 1.0
-```
-
----
-
-## **🔍 Example Prediction (Sample from Test Set)**
-
-```python
-sample_cv = X_test.iloc[0:1]
-model.predict(sample_cv)
-```
-
-**Output:**
-
-```
-Predicted Job for sample CV: Healthcare Specialist
-```
-
----
-
 ## **🆕 Predicting a New User's CV**
 
 ```python
@@ -156,19 +116,6 @@ model.predict(new_cv_df)
 ```
 The recommended job for this CV is: Data Scientist
 ```
-
----
-
-## **📈 Data Summary**
-
-To display dataset statistics:
-
-```python
-summary_table = cv_data.describe(include='all')
-summary_table
-```
-
----
 
 ## **📥 How to Run the Project**
 
