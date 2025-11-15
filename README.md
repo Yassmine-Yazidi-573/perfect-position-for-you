@@ -1,10 +1,3 @@
-# perfect-position-for-you
-Here is a clean, professional **README.md** you can use for your ML project.
-I organized it so it looks like a real GitHub project with sections like *Overview, Dataset, Environment, Model Pipeline, Results,* and *How to Use.*
-You can copy–paste directly into a README.md file.
-
----
-
 # **CV-Based Job Recommendation System**
 
 A machine learning project that predicts the most suitable job category for a candidate based on their CV features (experience, skills, language level, etc.).
