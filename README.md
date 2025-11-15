@@ -5,7 +5,7 @@ The model uses a **Random Forest Classifier** trained on a synthetic dataset (`f
 
 ---
 
-## **📌 Project Overview**
+## ** Project Overview**
 
 This project demonstrates a simple end-to-end ML pipeline:
 
@@ -18,7 +18,7 @@ This project demonstrates a simple end-to-end ML pipeline:
 
 ---
 
-## **📂 Dataset**
+## ** Dataset**
 
 The dataset `fake_cv_data.csv` contains the following features:
 
@@ -54,7 +54,7 @@ def generate_job_label(row):
 
 ---
 
-## **⚙️ Environment Setup**
+## ** Environment Setup**
 
 ### **Install dependencies**
 
@@ -62,7 +62,7 @@ def generate_job_label(row):
 pip install pandas numpy scikit-learn
 ```
 
-## **🧠 Model Building**
+## ** Model Building**
 
 ### **Train/Test Split**
 
@@ -84,14 +84,14 @@ model.fit(X_train, y_train)
 
 ---
 
-## **📊 Model Evaluation**
+## ** Model Evaluation**
 
 ```python
 y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy}")
 ```
-## **🆕 Predicting a New User's CV**
+## ** Predicting a New User's CV**
 
 ```python
 new_cv_data = {
@@ -117,7 +117,7 @@ model.predict(new_cv_df)
 The recommended job for this CV is: Data Scientist
 ```
 
-## **📥 How to Run the Project**
+## ** How to Run the Project**
 
 1. Clone the repository
 2. Place `fake_cv_data.csv` in the root directory
@@ -128,7 +128,7 @@ The recommended job for this CV is: Data Scientist
 
 ---
 
-## **📌 Future Improvements**
+## ** Future Improvements**
 
 * Add more real CV features
 * Use NLP to parse real CV text
